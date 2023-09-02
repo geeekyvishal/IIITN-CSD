@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0c192c;
+}
+
+
+/* background */
+.bubbles{
+    position: relative;
+    display: flex;
+
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background:#ff2d75;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75; 
+}
+
+
+@keyframes animate {
+    0% 
+    { transform: translateY(100vh) scale(0);}
+    100% 
+    { transform: translateY(-10vh) scale(1);}
+
+}
+/* background code ends here */
+
+
+/* .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    margin-top: 110px;
+} */
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+/* navbar */
+
+.cover {
+    width: 100%;
+    height: 440px;
+    background-image: url(cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 52px;
+    padding: 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 250px;
+    height: 40px;
+    background-image: url(logowobg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 145px;
+    padding-left: 10px;
+}
+
+.tags {
+    margin-right: 100px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+.tags ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.tags ul li {
+    padding: 0px 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
