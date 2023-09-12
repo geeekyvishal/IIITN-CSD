@@ -63,6 +63,7 @@ body{
     text-transform: uppercase;
     font-family: poppins ;
 }
+
 .login button:hover{
     background: linear-gradient(0deg,rgb(166, 74, 241) ,rgb(10, 154, 237));
     transform: scale(1.01);
