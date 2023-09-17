@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IIITN CSD</title>
+  <!-- <link rel="stylesheet" href="bg.css"> -->
+  <link rel="icon" href="clglogo.png">
+  <link rel="stylesheet" href="bg.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="cardhover.css">
+
+
+  <Style>
+    a:hover {
+      color:  #00ffee ;
+    }
+    *{ 
+        color:rgb(4, 8, 83);
+    }
+
+    .stdbtn button:hover{
+    background: linear-gradient(0deg,rgb(166, 74, 241) ,rgb(10, 154, 237));
+    transform: scale(1.01);
+    cursor: pointer;
+
+    .cover{
+        height: 400px;
+    }
+}
+
+
+
+  </Style>
+
+
+<style>
+    /* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the entire page */
+body {
+  background: linear-gradient(0deg,rgb(234, 227, 239) ,rgb(86, 181, 236)); /* Choose a background color of your choice */
+  font-family: Arial, sans-serif; /* Choose a suitable font stack */
+  color: #333; /* Set a default text color */
+}
+
+/* Style the header section */
+.cover {
+  background-image: url('your-background-image.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.logo img {
+  max-width: 100px; /* Adjust the size of your logo */
+}
+
+/* Style the navigation menu */
+.navbar_tags {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar_tags li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar_tags a {
+  text-decoration: none;
+  color: #333; /* Set link color */
+  font-weight: bold;
+}
+
+.navbar_tags a:hover {
+  color: #00ffee; /* Change link color on hover */
+}
+
+/* Style the buttons */
+.stdbtn Button {
+  background: linear-gradient(0deg, rgb(166, 74, 241), rgb(10, 154, 237));
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  color: #fff; /* Set button text color */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.stdbtn Button:hover {
+  background: linear-gradient(0deg, rgb(10, 154, 237), rgb(166, 74, 241));
+  transform: scale(1.05);
+}
+
+</style>
+
+
+
+<style>
+    /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+</head>
+
+<body>
+  <!-- header part -->
+  <div class="cover">
+    <div class="navbar">
+      <div class="logo">
+        <img src="clglogo.png" alt="" height="100" width="100">
+      </div>
+      <div class="tags">
+        <ul class="navbar_tags">
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="contact.html" target="_blank">Contact Vishal</a></li>
+          <li><a href="index.html">Log Out</a></li>
+        </ul>
+      </div>
+      
+     
+    </div>
+    <center><H1>Mathematics</H1></center>
+    
+  </div>
+
+
+<br><br>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Syllabus')" id="defaultOpen">Syllabus</button>
+    <button class="tablinks" onclick="openCity(event, 'PYQ')">PYQ</button>
+    <button class="tablinks" onclick="openCity(event, 'Book')">Book</button>
+    <button class="tablinks" onclick="openCity(event, 'notes1')">Notes(Beta gamma)</button>
+    <button class="tablinks" onclick="openCity(event, 'notes2')">Notes(Differential Calculus)</button>
+    <button class="tablinks" onclick="openCity(event, 'notes3')">Notes(Squence series 1)</button>
+    <button class="tablinks" onclick="openCity(event, 'notes4')">Notes(Squence series 2)</button>
+    <button class="tablinks" onclick="openCity(event, 'notes5')">Notes(Squence series 3)</button>
+
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Syllabus" class="tabcontent">
+    <h3>Syllabus For Sessional 1</h3>
+    <p>
+      <strong>
+        MODULE 1 : Complete
+        <br>
+        Module 2:
+      </strong>
+      <br>
+      Limit & Continuity (ε-δ)
+      <br>
+      Rolle's Theorem
+      <br>
+      Lagrange's Theorem
+      <br>
+      Cuachy 's Mean Value Theorem
+      <br>
+      Taylor's Theorem Remainder <br>
+      curva tracing ( cartesian and polar)
+      <br>
+      Beta and Gamma function
+  </div>
+  
+  <div id="PYQ" class="tabcontent">
+    <h3>PYQ</h3>
+    
+    <center>
+
+        <iframe src="CDS Sessional1.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+</div>
+ 
+<div id="Book" class="tabcontent">
+    <h3>Book</h3>
+    <p>BS Grewal</p>
+    <center>
+        <iframe src="BS grewal.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+  </div>
+
+ 
+<div id="notes1" class="tabcontent">
+    <h3>Notes</h3>
+    <center>
+        <iframe src="Beta Gamma.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+  </div>
+ 
+
+<div id="notes2" class="tabcontent">
+    <h3>Notes</h3>
+    <center>
+        <iframe src="Differential Calculus 04.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+  </div>
+ 
+<div id="notes3" class="tabcontent">
+    <h3>Notes</h3>
+    <center>
+        <iframe src="Sequences.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+  </div>
+ 
+<div id="notes4" class="tabcontent">
+    <h3>Notes</h3>
+    <center>
+        <iframe src="Sequence and Series 1.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+  </div>
+ 
+<div id="notes5" class="tabcontent">
+    <h3>Notes</h3>
+    <center>
+        <iframe src="sequence and series 4.pdf" frameborder="0" height="1400" width="1000"></iframe>
+    </center>
+  </div>
+
+
+
+
+
+
+
+  <!-- javascript -->
+  <script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+  </script>
+
+</body>
+
+</html>
