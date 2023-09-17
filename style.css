@@ -10,3 +10,9 @@
     align-items: center;
     text-align: center;
 }
+
+.notice{
+    align-content: center;
+    text-decoration: double;
+    color: aliceblue;
+}
