@@ -5,9 +5,9 @@ td {
 }
 
 table {
-  /* width: 40%; */
-  max-width: 38%;
-  height: 270px;
+  /* width: 600px; */
+  max-width: 34%;
+  /* height: 270px; */
   margin: 0 auto;
   display: block;
   overflow-x: auto;
