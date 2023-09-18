@@ -15,16 +15,46 @@
 
   <Style>
     a:hover {
-      color:  #b7e0ee ;
+      color: #b7e0ee;
     }
 
-    .stdbtn button:hover{
-    background: linear-gradient(0deg,rgb(166, 74, 241) ,rgb(10, 154, 237));
-    transform: scale(1.01);
-    cursor: pointer;
-}
+    .stdbtn button:hover {
+      background: linear-gradient(0deg, rgb(166, 74, 241), rgb(10, 154, 237));
+      transform: scale(1.01);
+      cursor: pointer;
+    }
 
 
+
+    table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        
   </Style>
 
 </head>
@@ -48,15 +78,13 @@
   </div>
 
 
-<hr color="white">
+  <hr color="white">
   <div class="notice">
     <H2>NOTICE</H2>
-    <marquee behavior="" direction="">
-     
-    </marquee>
+
 
     <div class="main">
-      <marquee id="marID"
+      <!-- <marquee id="marID"
                
                direction="left"
                loop="">
@@ -72,127 +100,169 @@
      
       <input type="button"
              onclick="marID.stop()"
-             value="STOP">
-  </div>
+             value="STOP"> -->
+
+      <h3>Sessional 1 Time Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Exam Date</th>
+            <th>Course Name</th>
+            <th><center>Time</center></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>23 Sept</td>
+            <td>Mathematics</td>
+            <td>09:00 AM - 10:00 AM</td>
+          </tr>
+          <tr>
+            <td>23 Sept</td>
+            <td>Intro to Data & Analytics</td>
+            <td>03:00 PM - 04:00 PM</td>
+          </tr>
+
+          <tr>
+            <td>25 Sept</td>
+            <td>Professional Ethics</td>
+            <td>09:00 AM - 10:00 AM</td>
+          </tr>
+          <tr>
+            <td>25 Sept</td>
+            <td>Computer Programming</td>
+            <td>03:00 PM - 04:00 PM</td>
+          </tr>
+          <tr>
+            <td>26 Sept</td>
+            <td>Communication Skills</td>
+            <td>03:00 PM - 04:00 PM</td>
+          </tr>  
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+
+
+    </div>
   </div>
   <hr>
-  
 
 
-  
-
-<div class="tiles">
-  <div class="stdbtn">
-    <Button>
-      <a href="roll.pdf">
-      <img src="std.png" class="card-img" height="200">
-      <br>
-      <strong>STUDENT INFO</strong>
-      <br>
-    </Button>
-  </a>
-  </div>
-  <br>
 
 
-  <div class="stdbtn">
-    <Button>
-      <a href="tchr.html">
-      <img src="tchr.png" class="card-img" height="200">
-      <br>
-      <strong>TEACHER INFO</strong>
-      <br> 
-    </Button>
-  </a>
-  </div>
-  <br>
 
-
-  <div class="stdbtn">
-    <Button>
-      <a href="timetable.html">
-        <img src="TT.png" class="card-img" height="200">
-      <br>
-      <strong>TIMETABLE INFO</strong>
-      <br> 
-    </Button>
-      </a>
-      
-  </div>
-  <br>
-
-
-  <div class="stdbtn">
-    <a href="pyq.html">
+  <div class="tiles">
+    <div class="stdbtn">
       <Button>
-        <img src="exam.png" class="card-img" height="200">
-        <br>
-        <strong>PAST YEAR PAPERS</strong>
-        <br> 
+        <a href="roll.pdf">
+          <img src="std.png" class="card-img" height="200">
+          <br>
+          <strong>STUDENT INFO</strong>
+          <br>
       </Button>
-    </a>
-    
-  </div>
-</div>
-
-  
-<div class="tiles">
-  <div class="stdbtn">
-    <Button>
-      <a href="material.html">
-      <img src="book.png" class="card-img" height="200">
-      <br>
-      <strong>STUDY MATERIAL</strong>
-      <br>
-    </Button>
-  </a>
-  </div>
-  <br>
-
-
-  <div class="stdbtn">
-    <Button>
-      <a href="gallery.html">
-      <img src="gallery.png" class="card-img" height="200">
-      <br>
-      <strong>Gallery</strong>
-      <br> 
-    </Button>
-  </a>
-  </div>
-  <br>
-
-
-  <div class="stdbtn">
-    <a href="ldbd.html">
-    <Button>
-        <img src="ldbd.png" class="card-img" height="200">
-      <br>
-      <strong>Leaderboard</strong>
-      <br> 
-    </Button>
       </a>
-      
-  </div>
-  <br>
+    </div>
+    <br>
 
 
-  <div class="stdbtn">
-    <a href="game.html">
+    <div class="stdbtn">
       <Button>
-        <img src="game.png" class="card-img" height="200">
-        <br>
-        <strong>Games</strong>
-        <br> 
+        <a href="tchr.html">
+          <img src="tchr.png" class="card-img" height="200">
+          <br>
+          <strong>TEACHER INFO</strong>
+          <br>
       </Button>
-    </a>
-    
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <Button>
+        <a href="timetable.html">
+          <img src="TT.png" class="card-img" height="200">
+          <br>
+          <strong>TIMETABLE INFO</strong>
+          <br>
+      </Button>
+      </a>
+
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <a href="pyq.html">
+        <Button>
+          <img src="exam.png" class="card-img" height="200">
+          <br>
+          <strong>PAST YEAR PAPERS</strong>
+          <br>
+        </Button>
+      </a>
+
+    </div>
   </div>
-</div>
+
+
+  <div class="tiles">
+    <div class="stdbtn">
+      <Button>
+        <a href="material.html">
+          <img src="book.png" class="card-img" height="200">
+          <br>
+          <strong>STUDY MATERIAL</strong>
+          <br>
+      </Button>
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <Button>
+        <a href="gallery.html">
+          <img src="gallery.png" class="card-img" height="200">
+          <br>
+          <strong>Gallery</strong>
+          <br>
+      </Button>
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <a href="ldbd.html">
+        <Button>
+          <img src="ldbd.png" class="card-img" height="200">
+          <br>
+          <strong>Leaderboard</strong>
+          <br>
+        </Button>
+      </a>
+
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <a href="game.html">
+        <Button>
+          <img src="game.png" class="card-img" height="200">
+          <br>
+          <strong>Games</strong>
+          <br>
+        </Button>
+      </a>
+
+    </div>
+  </div>
 
 
 
-<!-- 
+  <!-- 
 
   <div class="card">
     <img src="std.png" class="card-img" height="200">
