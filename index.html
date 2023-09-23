@@ -1,75 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIITN CSD Login</title>
-    <link rel="icon" href="clglogo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIITN CSD Login</title>
+  <link rel="icon" href="clglogo.png">
 
 
-    <link rel="stylesheet" href="signinstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-  background: linear-gradient(45deg, #ff8080, #ffcc80, #80d4ff, #80ffaa);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
-}
+  <link rel="stylesheet" href="signinstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@400;600&display=swap');
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-    </style>
+    body {
+      background: linear-gradient(45deg, #ff8080, #ffcc80, #80d4ff, #80ffaa);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+    }
 
-</head>
-<body>
-  
-  
-  <div class="form">
-    
-    <h4>Log in to Account</h4>
-    <img src="clglogo.png" alt="" height="130" width="130">
-    <div class="login">
-            
-            <input type="text" id="loginid" placeholder="Username" >
-            <input type="password" id="PW" placeholder="Password">
-            <Button onclick="func()"><strong>Sign In</strong></Button>
-        </div>
-        <div class="suggests">
-            <div class="remember">
-                <input type="checkbox" checked>
-                <span><strong>Remember Me</strong></span>
-            </div>
-            <div class="forgot">
-                <span><strong>ENTRY FOR ADMIN </strong></span>
-            </div>
-        </div>
-    </div>
+    a { text-decoration:none; }
 
-    <script>
-      function func(){
-        var id = document.getElementById("loginid").value;
-        var pwd = document.getElementById("PW").value;
-
-
-        if(id == 'Vishal' && pwd == 'VishalOP'){
-          alert("Login Successfull")
-          window.location.assign("home.html")
-        }
-        else{
-          alert("Invalid Credential")
-        }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
       }
 
-    </script>
-    
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1 {
+      font-family: 'Croissant One', cursive;
+    }
+
+
+    /* cards */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      width: 180px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin: 20px;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 16px;
+      color: #777;
+    }
+
+    /* glass */
+    .glass {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(218, 224, 235, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+
+
+      display: flex; /* Display cards horizontally */
+      justify-content: center; /* Center cards horizontally */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <center>
+    <h1>Choose Your Branch</h1>
+  </center>
+<br>
+
+  <div class="glass">
+
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">CSE </h2>
+        <p class="card-description">B.Tech. Computer Science & Engineering</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">CSA</h2>
+        <p class="card-description">B. Tech. CSE (AI <br> & Machine Learning)</p>
+      </div>
+    </div>
+
+
+<a href="csd/home.html">
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">CSD</h2>
+        <p class="card-description">B. Tech. CSE (Data Science & Analytics)</p>
+      </div>
+    </div>
+  </a>
+
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">CSH</h2>
+        <p class="card-description">B. Tech. CSE (HCI & Gaming Technology) </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">ECI</h2>
+        <p class="card-description">B.Tech. Electronics & Communication Engineering (IOT)</p>
+        <!-- <p class="card-description">B. Tech. ECE (Internet of Things)</p> -->
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">ECE</h2>
+        <p class="card-description">B.Tech. Electronics & Communication Engineering</p>
+      </div>
+    </div>
+
+    <br>
+    <p>CSD is ready <br> Others are comming up Soon</p>
+  </div>
+
 </body>
+
 </html>
