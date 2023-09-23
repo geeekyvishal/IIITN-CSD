@@ -28,7 +28,7 @@
 
     table {
             width: 100%;
-            margin: 20px auto;
+            margin: 10px auto;
             border-collapse: collapse;
             background-color: #fff;
             color: #333;
@@ -37,7 +37,7 @@
 
         th, td {
             border: 1px solid #ddd;
-            padding: 12px;
+            padding: 3px;
             text-align: left;
         }
 
@@ -109,6 +109,7 @@
             <th>Exam Date</th>
             <th>Course Name</th>
             <th><center>Time</center></th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -116,32 +117,41 @@
             <td>23 Sept</td>
             <td>Mathematics</td>
             <td>09:00 AM - 10:00 AM</td>
+            <th><center>✅</center></th>
           </tr>
           <tr>
             <td>23 Sept</td>
             <td>Intro to Data & Analytics</td>
             <td>03:00 PM - 04:00 PM</td>
+            <th><center>✅</center></th>
           </tr>
-
+          
           <tr>
             <td>25 Sept</td>
             <td>Professional Ethics</td>
             <td>09:00 AM - 10:00 AM</td>
+            <th></th>
           </tr>
           <tr>
             <td>25 Sept</td>
             <td>Computer Programming</td>
             <td>03:00 PM - 04:00 PM</td>
+            <th></th>
           </tr>
           <tr>
             <td>26 Sept</td>
             <td>Communication Skills</td>
             <td>03:00 PM - 04:00 PM</td>
+            <th></th>
           </tr>  
           <!-- Add more rows as needed -->
         </tbody>
-      </table>
 
+        <center>
+          <p id="demo"></p>Till next exam
+        </center>
+        <script src="countdown.js"></script>
+      </table>
 
     </div>
   </div>
