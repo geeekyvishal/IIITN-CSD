@@ -1,0 +1,37 @@
+
+.stdbtn{
+    width: 570px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px 50px;
+    position: relative;
+    background: linear-gradient(80deg, #0096c7,#caf0f8);
+}
+
+/* .content .card {
+    box-shadow: 0px 2px 8px 0px rgb(107, 227, 249);  
+} */
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 100;
+    /* bottom: 50px; */
+    position: absolute;
+    background: #1f3d4738 ;
+    backdrop-filter: blur(5px);
+    /* border-radius: 15px; */
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+
+
+.card:hover{
+    transform: scale(1.3);
+
+}

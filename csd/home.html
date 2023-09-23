@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IIITN CSD</title>
+  <link rel="icon" href="clglogo.png">
+  <!-- <link rel="stylesheet" href="bg.css"> -->
+  <link rel="stylesheet" href="bg.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="cardhover.css">
+
+
+  <Style>
+    a:hover {
+      color: #b7e0ee;
+    }
+
+    .stdbtn button:hover {
+      background: linear-gradient(0deg, rgb(166, 74, 241), rgb(10, 154, 237));
+      transform: scale(1.01);
+      cursor: pointer;
+    }
+
+
+
+    table {
+            width: 100%;
+            margin: 10px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 3px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        
+  </Style>
+
+</head>
+
+<body>
+  <!-- header part -->
+  <div class="cover">
+    <div class="navbar">
+      <div class="logo">
+        <img src="clglogo.png" alt="" height="100" width="100">
+      </div>
+      <div class="tags">
+        <ul class="navbar_tags">
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="contact.html" target="_blank">Contact Vishal</a></li>
+          <li><a href="index.html">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <hr color="white">
+  <div class="notice">
+    <H2>NOTICE</H2>
+
+
+    <div class="main">
+      <!-- <marquee id="marID"
+               
+               direction="left"
+               loop="">
+               <strong>Sessional 1 EXAMS :</strong>
+               23 September - 26 September 2023       |   
+               CP exam expected to be on 25 sept(3 - 4 PM)      |  
+               Communication Skills exam expected to be on 26 sept(3 - 4 PM)
+      </marquee>
+      <br />
+      <input type="button"
+             onclick="marID.start()"
+             value="START">
+     
+      <input type="button"
+             onclick="marID.stop()"
+             value="STOP"> -->
+
+      <h3>Sessional 1 Time Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Exam Date</th>
+            <th>Course Name</th>
+            <th><center>Time</center></th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>23 Sept</td>
+            <td>Mathematics</td>
+            <td>09:00 AM - 10:00 AM</td>
+            <th><center>✅</center></th>
+          </tr>
+          <tr>
+            <td>23 Sept</td>
+            <td>Intro to Data & Analytics</td>
+            <td>03:00 PM - 04:00 PM</td>
+            <th><center>✅</center></th>
+          </tr>
+          
+          <tr>
+            <td>25 Sept</td>
+            <td>Professional Ethics</td>
+            <td>09:00 AM - 10:00 AM</td>
+            <th></th>
+          </tr>
+          <tr>
+            <td>25 Sept</td>
+            <td>Computer Programming</td>
+            <td>03:00 PM - 04:00 PM</td>
+            <th></th>
+          </tr>
+          <tr>
+            <td>26 Sept</td>
+            <td>Communication Skills</td>
+            <td>03:00 PM - 04:00 PM</td>
+            <th></th>
+          </tr>  
+          <!-- Add more rows as needed -->
+        </tbody>
+
+        <center>
+          <p id="demo"></p>Till next exam
+        </center>
+        <script src="countdown.js"></script>
+      </table>
+
+    </div>
+  </div>
+  <hr>
+
+
+
+
+
+  <div class="tiles">
+    <div class="stdbtn">
+      <Button>
+        <a href="roll.pdf">
+          <img src="std.png" class="card-img" height="200">
+          <br>
+          <strong>STUDENT INFO</strong>
+          <br>
+      </Button>
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <Button>
+        <a href="tchr.html">
+          <img src="tchr.png" class="card-img" height="200">
+          <br>
+          <strong>TEACHER INFO</strong>
+          <br>
+      </Button>
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <Button>
+        <a href="timetable.html">
+          <img src="TT.png" class="card-img" height="200">
+          <br>
+          <strong>TIMETABLE INFO</strong>
+          <br>
+      </Button>
+      </a>
+
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <a href="pyq.html">
+        <Button>
+          <img src="exam.png" class="card-img" height="200">
+          <br>
+          <strong>PAST YEAR PAPERS</strong>
+          <br>
+        </Button>
+      </a>
+
+    </div>
+  </div>
+
+
+  <div class="tiles">
+    <div class="stdbtn">
+      <Button>
+        <a href="material.html">
+          <img src="book.png" class="card-img" height="200">
+          <br>
+          <strong>STUDY MATERIAL</strong>
+          <br>
+      </Button>
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <Button>
+        <a href="gallery.html">
+          <img src="gallery.png" class="card-img" height="200">
+          <br>
+          <strong>Gallery</strong>
+          <br>
+      </Button>
+      </a>
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <a href="ldbd.html">
+        <Button>
+          <img src="ldbd.png" class="card-img" height="200">
+          <br>
+          <strong>Leaderboard</strong>
+          <br>
+        </Button>
+      </a>
+
+    </div>
+    <br>
+
+
+    <div class="stdbtn">
+      <a href="game.html">
+        <Button>
+          <img src="game.png" class="card-img" height="200">
+          <br>
+          <strong>Games</strong>
+          <br>
+        </Button>
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <!-- 
+
+  <div class="card">
+    <img src="std.png" class="card-img" height="200">
+    <h2 class="card-title">STUDENT INFO</h2>
+  </div>
+
+
+  <div class="card">
+    <img src="tchr.png" class="card-img" height="200">
+    <h2 class="card-title">TEACHER INFO</h2>
+  </div>
+
+
+  <a href="index.html">
+    <div class="card">
+      <img src="TT.png" class="card-img" height="200">
+      <h2 class="card-title">TIME TABLE</h2>
+    </div>
+  </a>
+
+
+  <div class="card">
+    <img src="std.png" class="card-img" height="200">
+    <h2 class="card-title">PAST YEAR PAPERS</h2>
+  </div> -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
